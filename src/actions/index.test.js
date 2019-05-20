@@ -14,6 +14,7 @@ describe("getSecretWord action creator", () => {
   test("adds response word to state", () => {
     const secretWord = "party";
     let store = storeFactory();
+    console.log("store: " + store);
 
     moxios.wait(() => {
       const request = moxios.requests.mostRecent();
